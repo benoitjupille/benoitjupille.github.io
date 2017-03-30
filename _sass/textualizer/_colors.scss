@@ -1,0 +1,49 @@
+// couleurs
+
+// Tableau des couleurs
+$couleurs: (
+    clay: #22313F,
+    blanc-casse: #fbfbfb,
+);
+
+// Variations
+$variations: (
+    lighten: (
+        function: lighten,
+        parameters: 15%
+    ),
+    darken: (
+        function: darken,
+        parameters: 10%
+    )
+);
+
+// Fonction pour récupérer une couleur en sass
+@function couleur($couleur, $variation: false) {
+
+    @if map-has-key($couleurs, $couleur) {
+        $couleur: map-get($couleurs, $couleur);
+    } @else {
+        @if type-of($couleur) != color {
+            @error "Couleur non valide : `#{$couleur}`.";
+        }
+    } 
+
+    @if $variation {
+        @if not map-has-key($variations, $variation) {
+            @error "Invalide $variation: `#{$variation}`.";
+        } @else {
+            $this-variation: map-get($variations, $variation);
+            $function: map-get($this-variation, function);
+            @if map-get($this-variation, parameters) {
+                $args: map-get($this-variation, parameters);
+                @return call($function, $couleur, $args);
+            }@else{
+                @return call($function, $couleur);
+            }
+            
+            
+        }
+    }
+    @return $couleur;
+}

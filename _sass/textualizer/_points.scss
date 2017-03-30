@@ -1,0 +1,54 @@
+// Extra small ecran / phone
+$ecran-xs:                  480px;
+$ecran-xs-min:              $ecran-xs;
+
+// Small ecran / tablet
+$ecran-sm:                  768px;
+$ecran-sm-min:              $ecran-sm;
+
+// Medium ecran / desktop
+$ecran-md:                  992px;
+$ecran-md-min:              $ecran-md;
+
+// Large ecran / wide desktop
+$ecran-lg:                  1200px;
+$ecran-lg-min:              $ecran-lg;
+
+// Ecran Extra large
+$ecran-xl:                  1870px;
+$ecran-xl-min:              $ecran-xl;
+
+// So media queries don't overlap when required, provide a maximum
+$ecran-xs-max:              ($ecran-sm-min - 1);
+$ecran-sm-max:              ($ecran-md-min - 1);
+$ecran-md-max:              ($ecran-lg-min - 1);
+$ecran-lg-max:              ($ecran-xl-min - 1);
+
+$ecran: "only screen";
+
+/* < 480px : téléphones */
+$ecran-xs-down: "#{$ecran} and (max-width: #{$ecran-xs - 1})";
+/* >= 480px : gros téléphones ou téléphones tenus à l'horizontal */
+$ecran-xs-up: "#{$ecran} and (min-width: #{$ecran-xs})";
+
+/* < 768px : petites tablettes, gros téléphones, phablettes */
+$ecran-sm-down: "#{$ecran} and (max-width: #{$ecran-xs-max})";
+/* Ecran entre 768px et 480px */
+$ecran-sm: "#{$ecran} and (min-width: #{$ecran-xs}) and (max-width: #{$ecran-xs-max})";
+/* >= 768px : tablettes */
+$ecran-sm-up: "#{$ecran} and (min-width: #{$ecran-sm-min})";
+
+/* < 992px : petits écrans, tablettes tenues à l'horizontal */
+$ecran-md-down: "#{$ecran} and (max-width: #{$ecran-sm-max})";
+/* >= 992px : écrans moyens */
+$ecran-md-up: "#{$ecran} and (min-width: #{$ecran-md-min})";
+
+/* < 1200px */
+$ecran-lg-down: "#{$ecran} and (max-width: #{$ecran-md-max})";
+/* >= 1200px : grands écrans */
+$ecran-lg-up: "#{$ecran} and (min-width: #{$ecran-lg-min})";
+
+/* < 1870px */
+$ecran-xl-down: "#{$ecran} and (max-width: #{$ecran-lg-max})";
+/* >= 1870px : écrans extra-larges ! */
+$ecran-xl-up: "#{$ecran} and (min-width: #{$ecran-xl-min})";
