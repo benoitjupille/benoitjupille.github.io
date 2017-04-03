@@ -1,7 +1,15 @@
 .main-header {
     background: couleur(clay);
     color: couleur(blanc-casse);
+    padding: 5rem 0;
     &__site-title {
         color: couleur(blanc-casse);
+        font-size: 2rem;
+        &:hover {
+            text-decoration: none;
+        }
+        &:visited {
+            color: inherit;
+        }
     }
 }

@@ -3,6 +3,9 @@
     <div class="wrapper">
 
         <a class="main-header__site-title" href="{{ "/" | relative_url}}">{{ site.title | escape }}</a>
+        <div class="main-header__site-descritpion">
+            {{ site.description | escape }}
+        </div>
 
         <nav class="site-nav">
             <span class="menu-icon">
