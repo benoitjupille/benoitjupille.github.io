@@ -9,4 +9,10 @@
     &--home {
         
     }
+    &--post {
+        h1 {
+            color: couleur(deeper);
+            text-transform: uppercase;
+        }
+    }
 }

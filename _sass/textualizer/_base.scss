@@ -18,8 +18,9 @@ dl, dd, ol, ul, figure {
  * Basic styling
  */
 body {
-  font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
+  font-family: 'Source Sans Pro', sans-serif;
   color: $text-color;
+  font-size: 1rem;
   background: couleur(blanc-casse);
   -webkit-text-size-adjust: 100%;
   -webkit-font-feature-settings: "kern" 1;
@@ -99,7 +100,7 @@ a {
   text-decoration: none;
 
   &:visited {
-    color: couleur(deeper, darken);
+    color: couleur(deeper);
   }
 
   &:hover {

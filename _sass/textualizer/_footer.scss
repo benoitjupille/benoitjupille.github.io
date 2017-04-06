@@ -1,0 +1,19 @@
+.site-footer {
+    background: couleur(clay);
+    padding: 2.5rem 0;
+    &__social-media-list {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        &__item {
+            display: inline-block;
+            padding: 0 15px;
+            text-transform: uppercase;
+            color: couleur(blanc-casse);
+            &:first-child {
+                padding-left: 0;
+            }
+        }
+    }
+}
+

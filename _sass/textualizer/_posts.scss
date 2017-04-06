@@ -7,16 +7,22 @@
     .post {
         position: relative;
         padding: 12px 0;
+        margin-bottom: 3rem;
         &__meta, &__link, &__title {
             display: inline-block;
         }
         
         &__title {
             margin: 0;
+            border-left: 3px solid couleur(deeper);
+            padding-left: 15px;
+            a {
+                color: couleur(deeper);
+            }
         }
         
         &__meta {
-            color: couleur(clay, lighten);
+            color: couleur(gris-clair);
             width: 100px;
             position: absolute;
             bottom: 14px;
@@ -29,6 +35,13 @@
         }
         &:nth-child(1) {
             padding-top: 0;
+        }
+        
+        &__excerpt {
+            p {
+                margin-bottom: 0.9rem;
+                line-height: 1.4rem;
+            }
         }
     }
 }

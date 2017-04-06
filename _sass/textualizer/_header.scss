@@ -12,4 +12,17 @@
             color: inherit;
         }
     }
+    
+    .trigger {
+        padding-top: 2.5rem;
+        a {
+            display: inline-block;
+            padding: 0 15px;
+            text-transform: uppercase;
+            color: couleur(blanc-casse);
+            &:first-child {
+                padding-left: 0;
+            }
+        }
+    }
 }
