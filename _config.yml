@@ -33,3 +33,4 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - assets/bower/
+  - brouillons
