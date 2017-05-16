@@ -4,10 +4,11 @@ title: "La programmation minimaliste"
 categories: dev, reflexion
 ---
 
-La perfection est atteinte, non pas quand il n'y a plus rien à ajouter, mais quand il n'y a plus rien à enlever.
+"La perfection est atteinte, non pas quand il n'y a plus rien à ajouter, 
+mais quand il n'y a plus rien à enlever." - Antoine de Saint-Exupéry
 
 
-Cette citation d'Antoine de Saint-Exupéry illustre assez bien l'idée que je me fais
+Cette citation illustre assez bien l'idée que je me fais
 du minimalisme. 
 
 La semaine dernière, j'ai regardé le documentaire "The minimalist" sur Netflix. J'ai été 
