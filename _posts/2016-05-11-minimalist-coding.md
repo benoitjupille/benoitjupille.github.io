@@ -16,12 +16,16 @@ petit moment. Mais j'ai aussi compris que je pouvais encore me simplifier la vie
 intérieur, me débarrasser encore de superflu. 
 
 En tant que développeur, je me suis alors naturellement posé la question s'il était possible
-de communiquer cette philosophie à travers mon code. Je vais essayer de vous synthétiser le résultat de mes recherches 
-dans cet article, et aussi écrire quelques exemples concrets que j'utilise.
-Pour simplifier la chose, on pourrait établir un code de conduite qui pourrait ressembler à ça :
+de communiquer cette philosophie à travers mon code, tout en le gardant lisible. C'est un objectif
+que je garde en tête depuis, que j'essaye d'améliorer au jour le jour. Et quand je sens que mon code
+peut être plus beau, je refactorise, puis je me repose la question. 
 
-* Si ce n'est pas nécessaire, il est inutile de réinventer la roue. Utiliser des librairies __fiables__
-lorsqu'on le peut.
+## Les signes d'un code qui doit être refactoriser
+
+J'utilise quelques petites techniques pour m'indiquer quand mon code devrait être revu : 
+
+* Les lignes de code dépassent de l'écran : verticalement ou horizontalement, là c'est clair
+il faut que je sectionne tout ça en méthodes
 
 * Utiliser des noms évocateurs pour les noms de méthodes, classes et variables. 
 http://www.ocoudert.com/blog/2013/07/30/the-rules-of-minimalist-programming/
