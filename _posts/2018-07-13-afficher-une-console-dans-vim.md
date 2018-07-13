@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Afficher une console dans Vim ?"
-categories: workflow, dev, vim 
+categories: workflow dev vim 
 ---
 
 Il est possible d'avoir une console dans la plupart de nos IDE favoris. Alors pourquoi
